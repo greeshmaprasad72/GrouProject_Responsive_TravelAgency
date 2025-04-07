@@ -45,16 +45,15 @@ header{
 nav ul{
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 nav a{
     text-decoration: none;
-    color: white;
+    color: #23527C;
     font-weight: normal;
     transition: color 0.3s;
-    background-color: #23527C;
-    padding: 5px 10px;
+    padding: 10px;
     border-radius: 5px;
     font-size: 16px;
     transition: background-color 0.3s;
