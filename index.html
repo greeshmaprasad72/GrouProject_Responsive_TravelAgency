@@ -1,53 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pick Your Travel</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pick Your Travel - Tours & Travels</title>
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header>
-        <div class="logo-container">
-            <img src="images/airplane.png" alt="Logo" class="logo">
-            <h1 class="logo-text">Pick Your Travel</h1>
+        <div class="logo">
+            <img src="images/airplane.png" alt="Pick Your Travel Logo">
+            <span class="logo-text">Pick Your Travel</span>
         </div>
         <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="#services">Tour Packages</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-item">Home</a></li>
+                <li><a href="about.html" class="nav-item">About Us</a></li>
+                <li><a href="#" class="nav-item">Tours</a></li>
+                <li><a href="#" class="nav-item">Contact Us</a></li>
             </ul>
         </nav>
+        <a href="#" class="book-btn">Book Now</a>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
     </header>
-    <section class="section-main">
-        <div class="section-content">
-            <h2>Explore the World with Us</h2>
-            <p>Discover amazing destinations and create unforgettable memories.</p>
-            <a href="#" class="explore-btn">Explore Now</a>
+
+
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <p class="subtitle">Top Travel Companies in Kerala</p>
+            <h1>Experience The World Like Never Before</h1>
+            <a href="#" class="cta-btn pulse-btn">Let's Go Now</a>
         </div>
 
         <form class="enquiry-form">
-            <div class="input-container">
+            <div class="input-group">
                 <i class="fas fa-user"></i>
-                <input type="text" placeholder="Name" required>
+                <input type="text" placeholder="Your Name" />
             </div>
-
-            <div class="input-container">
-                <i class="fas fa-envelope"></i>
-                <input type="email" placeholder="Email" required>
+            <div class="input-group">
+                <i class="fas fa-phone"></i>
+                <input type="text" placeholder="Your Contact" />
             </div>
-            <div class="input-container">
+            <div class="input-group">
                 <i class="fas fa-map-marker-alt"></i>
-                <input placeholder="Destination" required>
+                <input type="text" placeholder="Destination" />
             </div>
-            <button type="submit" class="submit-btn">ENQUIRE NOW</button>
+            <button type="submit" class="enquire-btn">ENQUIRE NOW</button>
         </form>
-
     </section>
-    
 
+    <section class="packages">
+        <div class="section-title">
+            <h1>WELCOME</h1>
+            <h2>Our Main Packages</h2>
+        </div>
+        <div class="package-container">
+            <div class="package-card">
+                <span class="badge">Special Offer</span>
+                <img src="images/thailand.jpg" alt="Thailand" />
+                <div class="package-details">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>5 Rating</span>
+                    </div>
+                    <h3>Thailand luxury package</h3>
+                    <p>4N 5D package</p>
+                </div>
+            </div>
+
+            <div class="package-card">
+                <img src="images/bali.jpg" alt="Bali" />
+                <div class="package-details">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <span>4.6 Rating</span>
+                    </div>
+                    <h3>Beautiful Bali package</h3>
+                    <p>4N 5D package</p>
+                </div>
+            </div>
+
+            <div class="package-card">
+                <img src="images/goa1.jpg" alt="Goa" />
+                <div class="package-details">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <span>4.5 Rating</span>
+                    </div>
+                    <h3>Goa package</h3>
+                    <p>2N 3D package</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-about-section">
+        <div class="banner">
+            <img src="images/bali.jpg" alt="Songkran Festival">
+            <div class="festival-promo animated-element">
+                <h3>Get Ready for<br>Thailand Songkran Festival</h3>
+                <p>(April 13 to 15)</p>
+            </div>
+        </div>
+
+        <div class="about-details">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Welcome Pick Your Travel</h2>
+                    <p>
+                        Welcome to Pick Your Tours and Travels, the leading high-quality service provider in the tours and
+                        travel field.
+                        In 2018, we established our firm in Peravoor after 20 years of experience abroad. Now Global
+                        Tours and Travels
+                        is one of the leading travel agencies in Kerala. That renders quality travel services to
+                        corporate and individual
+                        customers. We offer a variety of exciting tours and experiences across the globe. Since then, we
+                        are the most
+                        trusted and respected name in the travel industry.
+                    </p>
+
+                    <p>
+                        Be it an unexpected business trip or a leisurely getaway, we help you handle the hassles of your
+                        travel itineraries
+                        in the most cost-effective and professional manner. From strategic booking, embassy attestation,
+                        or visa stamping to
+                        hotel reservations and travel insurance, we remain your 'highly proficient and reliable travel
+                        partner' who will
+                        put you at ease through any uncertainties of domestic or international travel.
+                    </p>
+
+                    <p>
+                        We have a team of efficient and enthusiastic industry experts who are well-versed in the nuances
+                        of the market.
+                        In the past few years, Pick Your Tours & Travels has grown and branched out into 2 full-fledged
+                        offices in Kerala.
+                        With a focus on quality rather than quantity, we have streamlined our expertise with the primary
+                        focus on our
+                        outbound and inbound units.
+                    </p>
+
+                    <a href="#" class="explore-btn">Explore Now</a>
+                </div>
+
+                <div class="about-images">
+                    <img src="images/munnar.jpg" alt="Kerala Nature Walk">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="destination-section">
+        <div class="section-header">
+            <h4>Destination</h4>
+            <h2>Your Desired Destination</h2>
+        </div>
+        <div class="destination-grid">
+            <div class="destination-card">
+                <img src="images/dubai.jpg" alt="Dubai">
+                <h3>Dubai</h3>
+            </div>
+            <div class="destination-card">
+                <img src="images/singapre.jpg" alt="Singapore">
+                <h3>Singapore</h3>
+            </div>
+            <div class="destination-card">
+                <img src="images/thailand1.jpg" alt="Thailand">
+                <h3>Thailand</h3>
+            </div>
+            <div class="destination-card">
+                <img src="images/kashmir.jpg" alt="Kashmir">
+                <h3>Kashmir</h3>
+            </div>
+            <div class="destination-card">
+                <img src="images/kerala2.jpg" alt="Kerala">
+                <h3>Kerala</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="section-title">
+            <h4>TESTIMONIALS</h4>
+            <h1>What Our Customers Say</h1>
+        </div>
+        <div class="testimonial-container">
+            <div class="testimonial-card">
+                <div class="testimonial-img">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="testimonial-content">
+                    <p>"Pick Your Travel made our trip to Thailand unforgettable. The attention to detail and
+                        personalized service exceeded our expectations."</p>
+                    <h4>Priya Sharma</h4>
+                    <span>Bangkok Trip, 2022</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-img">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="testimonial-content">
+                    <p>"Our family vacation to Bali was perfectly planned. Every accommodation, activity, and transport
+                        was arranged flawlessly."</p>
+                    <h4>Rahul Patel</h4>
+                    <span>Bali Trip, 2023</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-img">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="testimonial-content">
+                    <p>"As a solo traveler, I felt safe and well taken care of throughout my Kerala tour. I highly
+                        recommend their services."</p>
+                    <h4>Sarah Wilson</h4>
+                    <span>Kerala Tour, 2023</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+            
+                <div class="footer-columns">
+                    <div class="footer-logo">
+                        <img src="images/airplane.png" alt="Pick Your Travel Logo" />
+                        <p class="brand-text">Pick Your Tours and Travels</p>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="#">Destinations</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Top Destinations</h3>
+                        <ul>
+                            <li><a href="#">Thailand</a></li>
+                            <li><a href="#">Bali</a></li>
+                            <li><a href="#">Dubai</a></li>
+                            <li><a href="#">Singapore</a></li>
+                            <li><a href="#">Kerala</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Office</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-phone"></i> +91 9744339500</li>
+                            <li><i class="fa-solid fa-envelope"></i> trip@gmail.com</li>
+                            <li><i class="fa-solid fa-map-pin"></i> 152 King Eagle, Cambridge</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+
+                <div class="footer-info">
+                    <p>Group 1 @ 2025</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/scripts.js"></script>
 </body>
+
 </html>
