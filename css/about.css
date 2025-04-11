@@ -20,7 +20,7 @@
 .about-header h2 {
     font-size: 2.5rem;
     color: #23527C;
-    margin-bottom: 1rem;
+    margin: 3rem 0 1.5rem 0;
 }
 
 .about-header p {
@@ -84,4 +84,23 @@
     object-fit: cover;
     margin-bottom: 1rem;
     border: 5px solid #f4a825;
+}
+
+@media (max-width: 768px) {
+    .about-header h2 {
+        font-size: 2rem;
+        margin: 12.5rem 0 1.5rem 0;
+    }
+    .about-section {
+        background-color: #f2f1f1;
+    }
+    .about-content {
+        gap: 2rem;
+    }
+    .team-section {
+        padding: 4rem 2rem;
+    }
+    .team-section h2 {
+        margin-bottom: 1rem;
+    }
 }

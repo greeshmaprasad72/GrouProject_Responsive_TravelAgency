@@ -1,64 +1,76 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
 }
-header{
+
+header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    /* Stack logo and nav vertically */
     align-items: center;
-    width: 100%;
-    padding: 1rem 2rem;
+    /* Center everything */
+    padding: 1rem;
     background-color: #fff;
-    color: black;
-    position: absolute;
+    position: fixed;
     z-index: 10;
+    width: 100%;
 }
 
-.logo-container{
+.logo-container {
     display: flex;
-    align-self: center;
-    justify-content: center;
-    gap: 5px;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+    /* Space between logo and nav */
 }
-.logo-container img{
+
+.logo-container img {
     width: 30px;
     height: 30px;
-    display: flex;
-    align-self: center;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    margin-right: 5px;
-    
-
 }
-.logo-container h1{
+
+.logo-container h1 {
     font-size: 24px;
     font-weight: bold;
     color: #23527C;
 }
-nav ul{
+
+nav ul {
     list-style: none;
     display: flex;
-    gap: 10px;
+    flex-direction: column;
+    /* Stack nav items vertically */
+    align-items: center;
+    /* Center nav items */
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    /* Full width for centering */
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: #23527C;
-    font-weight: normal;
-    transition: color 0.3s;
-    padding: 10px;
+    padding: 8px 12px;
     border-radius: 5px;
     font-size: 16px;
+    display: block;
+    text-align: center;
+    /* Center text */
+    width: 100%;
+    /* Full width for better touch target */
     transition: background-color 0.3s;
 }
-nav a:hover{
+
+
+nav a:hover {
     color: #f5f5f5;
     background-color: #1E90FF;
 }
@@ -84,26 +96,30 @@ nav ul li a.active::after {
     background-color: #f4a825;
 }
 
-.section-main{
+.section-main {
     position: relative;
     height: 100vh;
     background: url('../images/bg.jpg') no-repeat center center/cover;
 }
-.section-content{
+
+.section-content {
     position: relative;
     padding: 20px;
     text-align: center;
     top: 35%;
 }
-.section-content h2{
+
+.section-content h2 {
     font-size: 3.2rem;
     margin-bottom: 1.5rem;
 }
-.section-content p{
+
+.section-content p {
     font-size: 1.5rem;
     margin-bottom: 2rem;
 }
-.explore-btn{
+
+.explore-btn {
     background-color: #f4a825;
     color: white;
     padding: 0.5rem 1rem;
@@ -113,7 +129,7 @@ nav ul li a.active::after {
     transition: background-color 0.3s;
 }
 
-.enquiry-form{
+.enquiry-form {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -131,24 +147,27 @@ nav ul li a.active::after {
     padding: 2rem;
     z-index: 2;
     margin-bottom: 10px;
-   
+
 }
 
-.input-container{
+.input-container {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     border: 1px solid #ccc;
     padding: 0.5rem 1rem;
-   
+
     background-color: white;
     color: black;
 }
-.input-container i{
+
+.input-container i {
     margin-right: 0.5rem;
 }
-.input-container input,textarea{
+
+.input-container input,
+textarea {
     border: none;
     outline: none;
     width: 100%;
@@ -161,7 +180,7 @@ nav ul li a.active::after {
 }
 
 
-.submit-btn{
+.submit-btn {
     background-color: #f4a825;
     border: none;
     padding: 0.5rem;
@@ -175,4 +194,29 @@ nav ul li a.active::after {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+}
+
+
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        /* Logo and nav side by side */
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+
+    .logo-container {
+        margin-bottom: 0;
+    }
+
+    nav ul {
+        flex-direction: row;
+        /* Horizontal nav items */
+        width: auto;
+        /* Don't force full width */
+    }
+
+    nav a {
+        width: auto;
+    }
 }
