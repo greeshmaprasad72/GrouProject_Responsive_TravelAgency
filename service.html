@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Packages | Pick Your Travel</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/airplane.png" alt="Pick Your Travel Logo">
+            <span class="logo-text">Pick Your Travel</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-item">Home</a></li>
+                <li><a href="about.html" class="nav-item">About Us</a></li>
+                <li><a href="service.html" class="nav-item">Tours</a></li>
+                <li><a href="contact.html" class="nav-item">Contact Us</a></li>
+            </ul>
+        </nav>
+        <a href="contact.html" class="book-btn">Book Now</a>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <section class="package-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Explore Our Tour Packages</h1>
+            <p>Discover the world with our carefully curated travel experiences</p>
+        </div>
+    </section>
+
+    <section class="package-section" id="international">
+        <div class="section-header">
+            <h2><i class="fas fa-globe-americas"></i> International Tour Packages</h2>
+            <p>Explore amazing destinations around the world with our expertly crafted packages</p>
+        </div>
+        <div class="package-card">
+            <div class="card-badge">Popular</div>
+            <div class="package-img">
+                <img src="images/thailand.jpg" alt="Thailand">
+            </div>
+            <div class="package-content">
+                <h3>Thailand Luxury Package</h3>
+                <p class="package-desc">Experience the best of Bangkok & Phuket with hotel, food, and tour guide
+                    included.</p>
+                <div class="package-meta">
+                    <span class="duration"><i class="far fa-calendar-alt"></i> 4N/5D</span>
+                    <span class="price">$5000</span>
+                </div>
+                <div class="package-actions">
+                    <button class="btn-details"
+                        onclick="showPopup('Thailand Luxury Package - 4N/5D\nIncludes Bangkok & Phuket with hotel, food, and tour guide.')">Details</button>
+                    <button class="btn-book">Book Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="package-card">
+            <div class="card-badge">Special Offer</div>
+            <div class="package-img">
+                <img src="images/dubai.jpg" alt="Dubai">
+            </div>
+            <div class="package-content">
+                <h3>Dubai Luxury Package</h3>
+                <p class="package-desc">Includes hotel, desert safari, city tour and more amazing experiences.
+                </p>
+                <div class="package-meta">
+                    <span class="duration"><i class="far fa-calendar-alt"></i> 5N/6D</span>
+                    <span class="price">$8000</span>
+                </div>
+                <div class="package-actions">
+                    <button class="btn-details"
+                        onclick="showPopup('Dubai Luxury Package - 5N/6D\nIncludes hotel, desert safari, city tour and more.')">Details</button>
+                    <button class="btn-book">Book Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="package-card">
+            <div class="package-img">
+                <img src="images/bali.jpg" alt="Bali">
+            </div>
+            <div class="package-content">
+                <h3>Bali Paradise Package</h3>
+                <p class="package-desc">Explore Ubud, Seminyak and Nusa Dua with private villa stays.</p>
+                <div class="package-meta">
+                    <span class="duration"><i class="far fa-calendar-alt"></i> 6N/7D</span>
+                    <span class="price">$6250</span>
+                </div>
+                <div class="package-actions">
+                    <button class="btn-details"
+                        onclick="showPopup('Bali Paradise Package - 6N/7D\nExplore Ubud, Seminyak and Nusa Dua with private villa stays.')">Details</button>
+                    <button class="btn-book">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="package-section" id="national">
+        <div class="section-header">
+            <h2><i class="fas fa-map-marked-alt"></i> National Tour Packages</h2>
+            <p>Discover the beauty of Nature with our domestic packages</p>
+        </div>
+        <div class="package-card">
+            <div class="package-img">
+                <img src="images/kerala2.jpg" alt="Kerala">
+            </div>
+            <div class="package-content">
+                <h3>Kerala Backwaters</h3>
+                <p class="package-desc">Houseboat cruise with all meals and guided sightseeing included.</p>
+                <div class="package-meta">
+                    <span class="duration"><i class="far fa-calendar-alt"></i> 3N/4D</span>
+                    <span class="price">$4000</span>
+                </div>
+                <div class="package-actions">
+                    <button class="btn-details"
+                        onclick="showPopup('Kerala Backwaters - 3N/4D\nHouseboat cruise with all meals and guided sightseeing.')">Details</button>
+                    <button class="btn-book">Book Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="package-card">
+            <div class="card-badge">Best Seller</div>
+            <div class="package-img">
+                <img src="images/kashmir.jpg" alt="Kashmir">
+            </div>
+            <div class="package-content">
+                <h3>Kashmir Special</h3>
+                <p class="package-desc">Stay in Srinagar, Gulmarg and Pahalgam with shikara rides.</p>
+                <div class="package-meta">
+                    <span class="duration"><i class="far fa-calendar-alt"></i> 5N/6D</span>
+                    <span class="price">$4000</span>
+                </div>
+                <div class="package-actions">
+                    <button class="btn-details"
+                        onclick="showPopup('Kashmir Special - 5N/6D\nStay in Srinagar, Gulmarg and Pahalgam.')">Details</button>
+                    <button class="btn-book">Book Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="package-card">
+            <div class="package-img">
+                <img src="images/goa1.jpg" alt="Goa">
+            </div>
+            <div class="package-content">
+                <h3>Goa Beach Holiday</h3>
+                <p class="package-desc">Relax on beautiful beaches with luxury resort stays.</p>
+                <div class="package-meta">
+                    <span class="duration"><i class="far fa-calendar-alt"></i> 4N/5D</span>
+                    <span class="price">$3456</span>
+                </div>
+                <div class="package-actions">
+                    <button class="btn-details"
+                        onclick="showPopup('Goa Beach Holiday - 4N/5D\nRelax on beautiful beaches with luxury resort stays.')">Details</button>
+                    <button class="btn-book">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="package-section" id="local">
+        <div class="section-header">
+            <h2><i class="fas fa-umbrella-beach"></i> Local Tour Packages</h2>
+            <p>Enjoy local tours and experiences in your area at affordable prices</p>
+        </div>
+        <div class="package-grid">
+            <div class="package-card">
+                <div class="package-img">
+                    <img src="images/munnar.jpg" alt="Munnar">
+                </div>
+                <div class="package-content">
+                    <h3>Munnar Tea Trails</h3>
+                    <p class="package-desc">Day trip exploring tea plantations with guided tour and lunch.</p>
+                    <div class="package-meta">
+                        <span class="duration"><i class="far fa-clock"></i> 1 Day</span>
+                        <span class="price">$1999</span>
+                    </div>
+                    <div class="package-actions">
+                        <button class="btn-details"
+                            onclick="showPopup('Munnar Tea Trails\nDay trip exploring tea plantations with guided tour and lunch.')">Details</button>
+                        <button class="btn-book">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="package-card">
+                <div class="card-badge">New</div>
+                <div class="package-img">
+                    <img src="images/kerala2.jpg" alt="Alleppey">
+                </div>
+                <div class="package-content">
+                    <h3>Alleppey Backwater Cruise</h3>
+                    <p class="package-desc">Evening cruise through Kerala's famous backwaters with dinner.</p>
+                    <div class="package-meta">
+                        <span class="duration"><i class="far fa-clock"></i> 5 Hours</span>
+                        <span class="price">$1250</span>
+                    </div>
+                    <div class="package-actions">
+                        <button class="btn-details"
+                            onclick="showPopup('Alleppey Backwater Cruise\nEvening cruise through Kerala\'s famous backwaters with dinner.')">Details</button>
+                        <button class="btn-book">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="package-card">
+                <div class="package-img">
+                    <img src="images/kerala.jpg" alt="Kochi">
+                </div>
+                <div class="package-content">
+                    <h3>Kochi Heritage Walk</h3>
+                    <p class="package-desc">Guided walking tour of Fort Kochi's historic landmarks.</p>
+                    <div class="package-meta">
+                        <span class="duration"><i class="far fa-clock"></i> 3 Hours</span>
+                        <span class="price">$799</span>
+                    </div>
+                    <div class="package-actions">
+                        <button class="btn-details"
+                            onclick="showPopup('Kochi Heritage Walk\nGuided walking tour of Fort Kochi\'s historic landmarks.')">Details</button>
+                        <button class="btn-book">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose-us">
+        <div class="section-header">
+            <h2>Why Choose Pick Your Travel?</h2>
+            <p>We go the extra mile to make your travel experience exceptional</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-hand-holding-heart"></i>
+                <h3>Personalized Service</h3>
+                <p>Customized itineraries tailored to your preferences and budget.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Trust & Safety</h3>
+                <p>Verified partners and 24/7 support throughout your journey.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-rupee-sign"></i>
+                <h3>Best Value</h3>
+                <p>Competitive prices without compromising on quality.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-star"></i>
+                <h3>Expert Guides</h3>
+                <p>Knowledgeable local guides to enhance your experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="overlay-bg" id="overlay" onclick="closePopup()"></div>
+    <div class="popup" id="popup">
+        <div class="popup-close" onclick="closePopup()">&times;</div>
+        <div class="popup-content" id="popupContent"></div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-columns">
+                    <div class="footer-logo">
+                        <img src="images/airplane.png" alt="Pick Your Travel Logo">
+                        <p class="brand-text">Pick Your Tours and Travels</p>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="#">Destinations</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Top Destinations</h3>
+                        <ul>
+                            <li><a href="#">Thailand</a></li>
+                            <li><a href="#">Bali</a></li>
+                            <li><a href="#">Dubai</a></li>
+                            <li><a href="#">Singapore</a></li>
+                            <li><a href="#">Kerala</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Office</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-phone"></i> +91 9744339500</li>
+                            <li><i class="fa-solid fa-envelope"></i> trip@gmail.com</li>
+                            <li><i class="fa-solid fa-map-pin"></i> 152 King Eagle, Cambridge</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-info">
+                    <p>Pick Your Travel All Rights Reserved @ 2025 Group 1 @ 2025</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="overlay-bg" id="overlay"></div>
+    <div class="popup" id="popup">
+        <div class="popup-close">&times;</div>
+        <div class="popup-content" id="popupContent"></div>
+    </div>
+    <script src="script/scripts.js"></script>
+</body>
+
+</html>
