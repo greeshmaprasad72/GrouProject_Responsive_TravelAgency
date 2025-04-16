@@ -724,21 +724,13 @@ Packages Section
   color: #333;
 }
 
-/* .team-member img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 1rem;
-  border: 5px solid #f4a825;
-} */
 .team-member img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  margin: 0 auto 1rem; /* 👈 让图片水平居中 */
-  display: block;      /* 👈 让 margin auto 生效 */
+  margin: 0 auto 1rem; 
+  display: block;      
   border: 5px solid #f4a825;
 }
 /* Contact Page Styles */
