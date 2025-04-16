@@ -225,6 +225,20 @@ header {
   letter-spacing: 1px;
   transition: all 0.3s ease;
 }
+.cta-btn-home {
+  display: inline-block;
+  background-color: var(--primary);
+  padding: 0.8rem 1.8rem;
+  border-radius: 5px;
+  border-color: #e09417;
+  color: var(--light);
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 1.5rem;
+  transition: all 0.3s ease;
+}
 
 .cta-btn:hover {
   background-color: var(--primary);
